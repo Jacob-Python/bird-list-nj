@@ -31,8 +31,8 @@ get_bird_by_index(index)
 ```
 Get info on a bird by common name. If no such bird is found it throws an error.
 
-#Sample
-```
+# Sample
+`
 <html>
 	<head>
 		<title>Birds of NJ example</title>
@@ -61,4 +61,4 @@ Get info on a bird by common name. If no such bird is found it throws an error.
 		</script>
 	</body>
 </html>
-```
+`
