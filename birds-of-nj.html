@@ -13,12 +13,9 @@
 		<script>
 			function search(){
 				let r;
-				try {
-					r = get_bird_by_name({"keyword":{"type":"Warbler","name":document.getElementById("search").value}}).html()
-				} catch(e) {
-					console.log(e)
-					document.getElementById("result").innerHTML = "Not found."
-				}
+				r = get_bird_by_name({"keyword":{"type":"Warbler","name":document.getElementById("search").value}})
+				console.log(r.html)
+				document.getElementById("result").innerHTML = r.html
 			}
 		</script>
 	</body>
