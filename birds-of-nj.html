@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Birds of NJ example</title>
+		<script src="parser.js"></script>
+	</head>
+	<body>
+		<h1>Search for a bird</h1>
+		<input id="search"></input>
+		<br>
+		<button onclick="search()">Search</button>
+		<br>
+		<div id="result"></div>
+		<script>
+			function search(){
+				let r;
+				try {
+					r = get_bird_by_name({"keyword":{"type":"Warbler","name":document.getElementById("search").value}})
+				} catch(e) {
+					console.log(e)
+					document.getElementById("result").innerHTML = "Not found."
+				}
+				if (r){
+					document.getElementById("result").innerHTML = "<p>Name: "+r.name+"</p><p>Type: "+r.type[0]+"</p>"
+				}
+			}
+		</script>
+	</body>
+</html>
