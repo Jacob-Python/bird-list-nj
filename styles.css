@@ -1,10 +1,10 @@
 #header, h3, h1, p, .addendum{
-	color: #FEFEFE;
+	color: #070707;
 	font-family: Arial;
 }
 button {
 	border-radius: 10px;
-	background-color: #708DFF;
+	background-color: #E3DE8F;
 	border: none;
 	color: white;
 	padding: 8px 10px;
@@ -17,25 +17,25 @@ button {
 	font-size: 40px;
 }
 .button{
-	color: #070707;
+	color: #FEFEFE;
 	height: 50px;
 	padding-right: 60px;
 }
 .button:hover{
-	 background-color: #008CBA;
+	 background-color: #D9D375;
 }
 body {
-	background-color: #070707;
+	background-color: #FEFEFE;
 }
 #header{
-	background-color: #FEFEFE;
+	background-color: #070707;
 }
 .addendum{
 	font-size: 20;
 	color: #708DFF;
 }
 .addendum:hover{
-	color: #008CBA;
+	color: #D9D375;
 }
 #buttons{
 	float: right;
@@ -45,21 +45,21 @@ body {
 }
 .header{
 	border-radius: 25px;
-	border: 5px solid #008CBA;
-	background-color: #070707;
+	border: 5px solid #D9D375;
+	background-color: #FEFEFE;
 	padding: 20px;
 	width: 500px;
 	height: 30px;
 }
 #bottom{
-	background-color: #FEFEFE;
+	background-color: #070707;
 	position: absolute;
 	bottom:0px;
 	width: 1350px;
 }
 .blk{
 	font-family: Arial;
-	color: #070707;
+	color: #FEFEFE;
 }
 .lnk{
 	font-family: Arial;
@@ -68,6 +68,6 @@ body {
 
 .header-logo{
 	width: 50px;
-	border: 5px solid #070707;
+	border: 5px solid #FEFEFE;
 	border-radius: 35%
 }
