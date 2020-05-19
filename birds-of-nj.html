@@ -14,13 +14,10 @@
 			function search(){
 				let r;
 				try {
-					r = get_bird_by_name({"keyword":{"type":"Warbler","name":document.getElementById("search").value}})
+					r = get_bird_by_name({"keyword":{"type":"Warbler","name":document.getElementById("search").value}}).html()
 				} catch(e) {
 					console.log(e)
 					document.getElementById("result").innerHTML = "Not found."
-				}
-				if (r){
-					document.getElementById("result").innerHTML = "<p>Name: "+r.name+"</p><p>Type: "+r.type[0]+"</p>"
 				}
 			}
 		</script>
