@@ -26,24 +26,28 @@ function get_bird_by_index(index){
 	}
 }
 function search(args){
-	let keyword = args.keyword;
-	let match_cat = args.searchType;
+	let keyword = args.keyword.toLowerCase();
+	let match_cat = args.type;
 	let order = args.order;
 	let matches = [];
+	let outdata = [];
 	for (let item of json){
 		let count;
 		if (match_cat == "name"){
-			itemtext = item.name;
+			itemtext = item.name.toLowerCase();
 			count = (itemtext.match(RegExp(keyword, 'g')) || []).length;
 		} else {
-			itemtext = item.type[0];
+			itemtext = item.type[0].toLowerCase();
 			let count1 = (itemtext.match(RegExp(keyword, 'g')) || []).length;
-			itemtext = item.type[1];
+			itemtext = item.type[1].toLowerCase();
 			let count2 = (itemtext.match(RegExp(keyword, 'g')) || []).length;
 			count = count1 + count2 / 2;
 		}
-		matches.push(count)
+		if (count < 1) {
+			matches.push(count)
+		}
 	}
+	let tmatches = matches;
 	matches = matches.sort();
 	if (!order) {
 		let temp = [];
@@ -52,5 +56,14 @@ function search(args){
 		}
 		matches = temp;
 	}
-	return matches;
+	for (var i = 0; i < matches.length; i ++){
+		outdata.push(tmatches.indexOf(matches[i]))
+	}
+	let jsont = [];
+	for (var i = 0; i < matches.length; i ++){
+		if (JSON.stringify(json[outdata[i]]) != undefined) {
+			jsont.push(JSON.stringify(json[outdata[i]])+"<br>")
+		}
+	}
+	return jsont;
 }

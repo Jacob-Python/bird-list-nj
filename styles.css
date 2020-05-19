@@ -1,10 +1,10 @@
-#header, h3, h1, p, .addendum{
+#header, h3, h1, p, u, label, .addendum{
 	color: #070707;
 	font-family: Arial;
 }
 button {
 	border-radius: 10px;
-	background-color: #E3DE8F;
+	background-color: #d5b942;
 	border: none;
 	color: white;
 	padding: 8px 10px;
@@ -32,7 +32,7 @@ body {
 }
 .addendum{
 	font-size: 20;
-	color: #708DFF;
+	color: #d5b942;
 }
 .addendum:hover{
 	color: #D9D375;
