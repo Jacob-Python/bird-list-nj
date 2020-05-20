@@ -1,8 +1,3 @@
-window.onload = function(){
-	var s = document.createElement("script");
-	s.src = "list.js";
-	document.head.appendChild(s);
-}
 function get_bird_by_name(name){
 	let f = 0;
 	let fi = 0;
