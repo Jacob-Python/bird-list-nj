@@ -114,7 +114,7 @@ var json = [
 	{
 		"name": "Winter Wren",
 		"type": "Wrens"
-	}
+	},
 	{
 		"name": "Painted Bunting",
 		"type": "Buntings"
