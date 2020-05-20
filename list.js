@@ -12,7 +12,7 @@ var json = [
 		"type":"Warbler"
 	},
 	{
-		"name":"American Redstart"
+		"name":"American Redstart",
 		"type": "Warbler"
 	},
 	{
@@ -53,14 +53,90 @@ var json = [
 	},
 	{
 		"name": "Wood Duck",
-		"type": "Ducks"
+		"type": "Duck"
 	},
 	{
 		"name": "Mallard Duck",
-		"type": "Ducks"
+		"type": "Duck"
 	},
 	{
 		"name": "Common Merganser",
-		"type": "Ducks"
+		"type": "Duck"
+	},
+	{
+		"name": "Solitary Vireo",
+		"type": "Vireo"
+	},
+	{
+		"name": "Red-eyed Vireo",
+		"type": "Vireo"
+	},
+	{
+		"name": "Yellow-throated Vireo",
+		"type": "Vireo"
+	},
+	{
+		"name": "White-eyed Vireo",
+		"type": "Vireo"
+	},
+	{
+		"name": "Pileated Woodpecker",
+		"type": "Woodpecker"
+	},
+	{
+		"name": "Yellow-shafted Flicker",
+		"type": "Woodpecker"
+	},
+	{
+		"name": "Downy Woodpecker",
+		"type": "Woodpecker"
+	},
+	{
+		"name": "Red-headed Woodpecker",
+		"type": "Woodpecker"
+	},
+	{
+		"name": "Carolina Wren",
+		"type": "Wren"
+	},
+	{
+		"name": "House Wren",
+		"type": "Wren"
+	},
+	{
+		"name": "Painted Bunting",
+		"type": "Bunting"
+	},
+	{
+		"name": "Indigo Bunting",
+		"type": "Bunting"
+	},
+	{
+		"name": "Scarlet Tanager",
+		"type": "Tanager"
+	},
+	{
+		"name": "Summer Tanager",
+		"type": "Tanager"
+	},
+	{
+		"name": "Song Sparrow",
+		"type": "Sparrow"
+	},
+	{
+		"name": "Swamp Sparrow",
+		"type": "Sparrow"
+	},
+	{
+		"name": "Chipping Sparrow",
+		"type": "Sparrow"
+	},
+	{
+		"name": "House Sparrow",
+		"type": "Sparrow"
+	},
+	{
+		"name": "Field Sparrow",
+		"type": "Sparrow"
 	}
 ]
