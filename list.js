@@ -6,7 +6,7 @@ var json = [
 	{
 		"name":"Northern Waterthrush",
 		"type":"Warblers"
-	}
+	},
 	{
 		"name":"Yellow Warbler",
 		"type":"Warblers"
