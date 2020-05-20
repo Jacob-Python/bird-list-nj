@@ -8,9 +8,6 @@
 		<meta name="description" content="Birdata">
 		<meta name="author" content="Jacob M">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="parser.js"> </script>
-		<script src="searchbar.js"> </script>
-		<script>window.onload = function(){addSearchBar("search-div")} </script>
 	</head>
 	<body>
 		<div id="header">
@@ -24,6 +21,24 @@
 		<u class="addendum" id="i1a" onclick="showdiv('i1')"><b>+</b> What is Birdata?</u>
 		<p id="i1" hidden>Birdata is an effort to compile a list of all birds native to the eastern<br> US. The list is maintained by several birdwatchers and programmers.</p><br><br>
 		<h3>The first bird search engine!</h3>
-		<div id="search-div"></div>
+		<input id="search"></input>
+		<br><input id="name" type="checkbox" checked>
+		<label for="name">Search by name or by family</label>
+		<br><button onclick="searchf();">Search</button>
+		<br><p id="result"></p>
+		<script>
+		function searchf(){
+			let r;
+			let t="family";
+			if (document.getElementById("name").checked){
+				t="name";
+			}
+			r=search({"keyword":document.getElementById("search").value,"type":t, "order":true})
+			t=[];
+			for (var i=0; i < r.length; i ++){
+				t.push("<h3>Name: "+r[i].name+"</h3><br><p>Family: "+r[i].type[0]+"s/"+r[i].type[1]+"</p><br><hr>")
+			}
+			document.getElementById("result").innerHTML=t;
+		}</script>
 	</body>
 </html>

@@ -21,16 +21,26 @@
 		<u class="addendum" id="i1a" onclick="showdiv('i1')"><b>+</b> Birdata API Intro</u>
 		<p id="i1" hidden>Birdata is an effort to compile a list of all birds native to the eastern<br> US. We like to keep the site open to the public. Part<br> of this is allowing our search tools and database to be accessible to anyone..</p><br><br>
 		<u class="addendum" id="i2a" onclick="showdiv('i2')"><b>+</b> How to add a Birdata search bar to your page</u>
-		<p id="i2" hidden>Just add to the header of your site the below code and replace &quot;my-div&quot; with where you want the search bar to go (which div):<br>
+		<p id="i2" hidden>Just add to the body of your site the below code:<br>
 		<code>
-			<span class="w">&lt;</span><span class="r">script</span>
-			<span class="g">src</span><span class="w">=</span><span class="y">&quot;https://www.birdata.gq/parser.js&quot;</span><span class="w">&gt;</span>
-			<span class="w">&lt;/</span><span class="r"><span class="r">script</span><span class="w">&gt;</span><br>
-			<span class="w">&lt;</span><span class="r">script</span>
-			<span class="g">src</span><span class="w">=</span><span class="y">&quot;https://www.birdata.gq/searchbar.js&quot;</span><span class="w">&gt;</span>
-			<span class="w">&lt;/</span><span class="r"><span class="r">script</span><span class="w">&gt;</span><br>
-			<span class="w">&lt;</span><span class="r">script</span><span class="w">&gt;</span><span class="b">window</span><span class="w">.</span><span class="g">onload</span> <span class="w">=</span> <span class="b">function</span><span class="w"> (){</span><span class="b">addSearchBar</span><span class="w">(</span><span class="y">&quot;my-div&quot;</span><span class="w">)}</span>
-			<span class="w">&lt;/</span><span class="r"><span class="r">script</span><span class="w">&gt;</span>
+			&#x3C;input id=&#x22;search&#x22;&#x3E;&#x3C;/input&#x3E;
+
+&#x9;&#x3C;br&#x3E;&#x3C;input id=&#x22;name&#x22; type=&#x22;checkbox&#x22; checked&#x3E;
+&#x9;&#x3C;label for=&#x22;name&#x22;&#x3E;Search by name or by family&#x3C;/label&#x3E;
+&#x9;&#x3C;br&#x3E;&#x3C;button onclick=&#x22;searchf();&#x22;&#x3E;Search&#x3C;/button&#x3E;
+&#x9;&#x3C;br&#x3E;&#x3C;p id=&#x22;result&#x22;&#x3E;&#x3C;/p&#x3E;&#x3C;script&#x3E;function searchf(){
+&#x9;let r;
+&#x9;let t=&#x22;family&#x22;;
+&#x9;if (document.getElementById(&#x22;name&#x22;).checked){
+&#x9;&#x9;t=&#x22;name&#x22;;
+&#x9;}
+&#x9;r=search({&#x22;keyword&#x22;:document.getElementById(&#x22;search&#x22;).value,&#x22;type&#x22;:t, &#x22;order&#x22;:true})
+&#x9;t=[];
+&#x9;for (var i=0; i &#x3C; r.length; i ++){
+&#x9;&#x9;t.push(&#x22;&#x3C;h3&#x3E;Name: &#x22;+r[i].name+&#x22;&#x3C;/h3&#x3E;&#x3C;br&#x3E;&#x3C;p&#x3E;Family: &#x22;+r[i].type[0]+&#x22;s/&#x22;+r[i].type[1]+&#x22;&#x3C;/p&#x3E;&#x3C;br&#x3E;&#x3C;hr&#x3E;&#x22;)
+&#x9;}
+&#x9;document.getElementById(&#x22;result&#x22;).innerHTML=t;
+}&#x3C;/script&#x3E;
 		</code></p><br><br>
 		<u class="addendum" id="i3a" onclick="showdiv('i3')"><b>+</b> Adjusting Searchbar Settings</u>
 		<p id="i3" hidden>
