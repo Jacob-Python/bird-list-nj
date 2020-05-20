@@ -2,6 +2,21 @@
 	color: #070707;
 	font-family: Arial;
 }
+.w {
+	color: #070707;
+}
+.r {
+	color: #FE4240;
+}
+.g {
+	color: #42FE40;
+}
+.y {
+	color: #d5b942;
+}
+.b {
+	color: #708dff;
+}
 button {
 	border-radius: 10px;
 	background-color: #d5b942;

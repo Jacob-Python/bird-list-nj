@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Demo | Birdata v1.0</title>
+		<title>Documentation | Birdata v1.0</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<script src="ui.js"></script>
 		<script src="parser.js"></script>
@@ -11,15 +11,30 @@
 	</head>
 	<body>
 		<div id="header">
-			<div class="header">Birdata.gq</div>
+			<div class="header">Birdata</div>
 			<span id="buttons">
-				<button onclick="window.location.href='index.html'" class="button">Demo</button>
-				<button onclick="window.location.href='apps.html'" class="button">How to Use It</button>
+				<button onclick="window.location.href='index.html'" class="button">About</button>
+				<button onclick="window.location.href='apps.html'" class="button">API Docs</button>
 			</span>
 		</div>
 		<h1>Docs for Birdata</h1>
-		<u class="addendum" id="i1a" onclick="showdiv('i1')"><b>+</b> What is Birdata?</u>
-		<p id="i1" hidden>Birdata is an effort to compile a list of all birds native to the eastern<br> US. The list is maintained by several birdwatchers and programmers.</p><br><br>
-		<h3>The first bird search engine!</h3>
+		<u class="addendum" id="i1a" onclick="showdiv('i1')"><b>+</b> Birdata API Intro</u>
+		<p id="i1" hidden>Birdata is an effort to compile a list of all birds native to the eastern<br> US. We like to keep the site open to the public. Part<br> of this is allowing our search tools and database to be accessible to anyone..</p><br><br>
+		<u class="addendum" id="i2a" onclick="showdiv('i2')"><b>+</b> How to add a Birdata search bar to your page</u>
+		<p id="i2" hidden>Just add to the header of your site the below code and replace &quot;my-div&quot; with where you want the search bar to go (which div):<br>
+		<code>
+			<span class="w">&lt;</span><span class="r">script</span>
+			<span class="g">src</span><span class="w">=</span><span class="y">&quot;https://www.birdata.gq/parser.js&quot;</span><span class="w">&gt;</span>
+			<span class="w">&lt;/</span><span class="r"><span class="r">script</span><span class="w">&gt;</span><br>
+			<span class="w">&lt;</span><span class="r">script</span>
+			<span class="g">src</span><span class="w">=</span><span class="y">&quot;https://www.birdata.gq/searchbar.js&quot;</span><span class="w">&gt;</span>
+			<span class="w">&lt;/</span><span class="r"><span class="r">script</span><span class="w">&gt;</span><br>
+			<span class="w">&lt;</span><span class="r">script</span><span class="w">&gt;</span><span class="b">addSearchBar</span><span class="w">(</span><span class="y">&quot;my-div&quot;</span><span class="w">)</span>
+			<span class="w">&lt;/</span><span class="r"><span class="r">script</span><span class="w">&gt;</span>
+		</code></p>
+		<u class="addendum" id="i3a" onclick="showdiv('i3')"><b>+</b> Adjusting Searchbar Settings</u>
+		<p id="i3" hidden>
+			If you want, you can adjust the JSON in the bit that says &quot;Search&quot; to make it sort differently.
+		</p>
 	</body>
 </html>
