@@ -1,142 +1,174 @@
 var json = [
 	{
+		"name":"Louisiana Waterthrush",
+		"type":"Warblers"
+	},
+	{
+		"name":"Northern Waterthrush",
+		"type":"Warblers"
+	}
+	{
 		"name":"Yellow Warbler",
-		"type":"Warbler"
+		"type":"Warblers"
 	},
 	{
 		"name":"Black-throated Blue Warbler",
-		"type":"Warbler"
+		"type":"Warblers"
 	},
 	{
 		"name":"Black-throated Green Warbler",
-		"type":"Warbler"
+		"type":"Warblers"
 	},
 	{
 		"name":"American Redstart",
-		"type": "Warbler"
+		"type": "Warblers"
 	},
 	{
 		"name": "Common Yellowthroat",
-		"type": "Warbler"
+		"type": "Warblers"
 	},
 	{
 		"name": "Magnolia Warbler",
-		"type": "Warbler"
+		"type": "Warblers"
 	},
 	{
 		"name": "Blackburnian Warbler",
-		"type": "Warbler"
+		"type": "Warblers"
 	},
 	{
 		"name": "Black-and-White Warbler",
-		"type": "Warbler"
+		"type": "Warblers"
 	},
 	{
 		"name": "Cape May Warbler",
-		"type": "Warbler"
+		"type": "Warblers"
 	},
 	{
 		"name": "Chestnut-sided Warbler",
-		"type": "Warbler"
+		"type": "Warblers"
 	},
 	{
 		"name": "Blue-winged Warbler",
-		"type": "Warbler"
+		"type": "Warblers"
 	},
 	{
 		"name": "Bay-breasted Warbler",
-		"type": "Warbler"
+		"type": "Warblers"
 	},
 	{
 		"name": "Hooded Warbler",
-		"type": "Warbler"
+		"type": "Warblers"
 	},
 	{
 		"name": "Wood Duck",
-		"type": "Duck"
+		"type": "Ducks"
 	},
 	{
 		"name": "Mallard Duck",
-		"type": "Duck"
+		"type": "Ducks"
 	},
 	{
 		"name": "Common Merganser",
-		"type": "Duck"
+		"type": "Ducks"
 	},
 	{
 		"name": "Solitary Vireo",
-		"type": "Vireo"
+		"type": "Vireos"
 	},
 	{
 		"name": "Red-eyed Vireo",
-		"type": "Vireo"
+		"type": "Vireos"
 	},
 	{
 		"name": "Yellow-throated Vireo",
-		"type": "Vireo"
+		"type": "Vireos"
 	},
 	{
 		"name": "White-eyed Vireo",
-		"type": "Vireo"
+		"type": "Vireos"
 	},
 	{
 		"name": "Pileated Woodpecker",
-		"type": "Woodpecker"
+		"type": "Woodpeckers"
 	},
 	{
 		"name": "Yellow-shafted Flicker",
-		"type": "Woodpecker"
+		"type": "Woodpeckers"
 	},
 	{
 		"name": "Downy Woodpecker",
-		"type": "Woodpecker"
+		"type": "Woodpeckers"
 	},
 	{
 		"name": "Red-headed Woodpecker",
-		"type": "Woodpecker"
+		"type": "Woodpeckers"
 	},
 	{
 		"name": "Carolina Wren",
-		"type": "Wren"
+		"type": "Wrens"
 	},
 	{
 		"name": "House Wren",
-		"type": "Wren"
+		"type": "Wrens"
 	},
 	{
+		"name": "Winter Wren",
+		"type": "Wrens"
+	}
+	{
 		"name": "Painted Bunting",
-		"type": "Bunting"
+		"type": "Buntings"
 	},
 	{
 		"name": "Indigo Bunting",
-		"type": "Bunting"
+		"type": "Buntings"
 	},
 	{
 		"name": "Scarlet Tanager",
-		"type": "Tanager"
+		"type": "Tanagers"
 	},
 	{
 		"name": "Summer Tanager",
-		"type": "Tanager"
+		"type": "Tanagers"
 	},
 	{
 		"name": "Song Sparrow",
-		"type": "Sparrow"
+		"type": "Sparrows"
 	},
 	{
 		"name": "Swamp Sparrow",
-		"type": "Sparrow"
+		"type": "Sparrows"
 	},
 	{
 		"name": "Chipping Sparrow",
-		"type": "Sparrow"
+		"type": "Sparrows"
 	},
 	{
 		"name": "House Sparrow",
-		"type": "Sparrow"
+		"type": "Sparrows"
 	},
 	{
 		"name": "Field Sparrow",
-		"type": "Sparrow"
+		"type": "Sparrows"
+	},
+	{
+		"name": "Woodthrush",
+		"type": "Thrushes"
+	},
+	{
+		"name": "Eastern Bluebird",
+		"type": "Thrushes"
+	},
+	{
+		"name": "Mountain Bluebird",
+		"type": "Thrushes"
+	},
+	{
+		"name": "Swainson's Thrush",
+		"type": "Thrushes"
+	},
+	{
+		"name": "Goldfinch",
+		"type": "Finches"
 	}
 ]
