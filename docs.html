@@ -23,25 +23,24 @@
 		<u class="addendum" id="i2a" onclick="showdiv('i2')"><b>+</b> How to add a Birdata search bar to your page</u>
 		<p id="i2" hidden>Just add to the body of your site the below code:<br>
 		<code>
-			&#x3C;input id=&#x22;search&#x22;&#x3E;&#x3C;/input&#x3E;
-
-&#x9;&#x3C;br&#x3E;&#x3C;input id=&#x22;name&#x22; type=&#x22;checkbox&#x22; checked&#x3E;
-&#x9;&#x3C;label for=&#x22;name&#x22;&#x3E;Search by name or by family&#x3C;/label&#x3E;
-&#x9;&#x3C;br&#x3E;&#x3C;button onclick=&#x22;searchf();&#x22;&#x3E;Search&#x3C;/button&#x3E;
-&#x9;&#x3C;br&#x3E;&#x3C;p id=&#x22;result&#x22;&#x3E;&#x3C;/p&#x3E;&#x3C;script&#x3E;function searchf(){
-&#x9;let r;
-&#x9;let t=&#x22;family&#x22;;
-&#x9;if (document.getElementById(&#x22;name&#x22;).checked){
-&#x9;&#x9;t=&#x22;name&#x22;;
-&#x9;}
-&#x9;r=search({&#x22;keyword&#x22;:document.getElementById(&#x22;search&#x22;).value,&#x22;type&#x22;:t, &#x22;order&#x22;:true})
-&#x9;t=[];
-&#x9;for (var i=0; i &#x3C; r.length; i ++){
-&#x9;&#x9;t.push(&#x22;&#x3C;h3&#x3E;Name: &#x22;+r[i].name+&#x22;&#x3C;/h3&#x3E;&#x3C;br&#x3E;&#x3C;p&#x3E;Family: &#x22;+r[i].type[0]+&#x22;s/&#x22;+r[i].type[1]+&#x22;&#x3C;/p&#x3E;&#x3C;br&#x3E;&#x3C;hr&#x3E;&#x22;)
-&#x9;}
-&#x9;document.getElementById(&#x22;result&#x22;).innerHTML=t;
-}&#x3C;/script&#x3E;
-		</code></p><br><br>
+			<!-- I seriously had to type this all in!-->
+			<span class="w">&lt;</span><span class="r">input</span> <span class="g">id</span><span class="w">=</span><span class="y">&quot;search&quot;</span><span class="w">&gt;</span><br>
+			<span class="w">&lt;</span><span class="r">input</span> <span class="g">id</span><span class="w">=</span><span class="y">&quot;name&quot;</span> <span class="g">type</span><span class="w">=</span><span class="y">&quot;checkbox&quot;</span> <span class="g">checked</span><span class="w">&gt;</span><br>
+			<span class="w">&lt;<span class="r">br</span>&gt;</span><span class="w">&lt;</span><span class="r">label</span> <span class="g">for</span><span class="w">=</span><span class="y">&quot;name&quot;</span><span class="w">&gt;Search by name or by family&lt;/</span><span class="r">label</span><span class="w">&gt;</span><br>
+			<span class="w">&lt;<span class="r">br</span>&gt;</span><span class="w">&lt;</span><span class="r">button</span> <span class="g">onclick</span><span class="w">=</span><span class="y">&quot;<span class="b">searchf</span><span class="w">();</span>&quot;</span><span class="w">&gt;Search&lt;/</span><span class="r">button</span><span class="w">&gt;</span><br>
+			<span class="w">&lt;<span class="r">br</span>&gt;</span><span class="w">&lt;</span><span class="r">p</span> <span class="g">id</span><span class="w">=</span><span class="y">&quot;search&quot;</span><span class="w">&gt;&lt;/</span><span class="r">p</span><span class="w">&gt;</span><br>
+			<span class="w">&lt;<span class="r">script</span>&gt;</span><br>
+			<span class="b">function searchf</span><span class="w">(){</span><br>
+			&emsp;<span class="b">let </span><span class="w">r;</span><br>
+			&emsp;<span class="b">let </span><span class="w">t<span class="r">=</span><span class="y">&quot;family&quot;</span>;</span><br>
+			&emsp;<span class="r">if </span><span class="w">(<span class="b">document</span><span class="w">.</span><span class="b">getElementById</span><span class="w">(<span class="y">&quot;name&quot;</span>).checked</span>){</span><br>
+			&emsp;&emsp;<span class="w">t</span><span class="r">=</span><span class="y">&quot;name&quot;</span><br>
+			&emsp;<span class="w">};</span><br>
+			<span class="w">};</span>
+			<span class="w">&lt;/<span class="r">script</span>&gt;</span>
+		</code>
+		</p>
+		<br><br>
 		<u class="addendum" id="i3a" onclick="showdiv('i3')"><b>+</b> Adjusting Searchbar Settings</u>
 		<p id="i3" hidden>
 			If you want, you can adjust the JSON in the bit that says &quot;Search&quot; to make it sort differently.

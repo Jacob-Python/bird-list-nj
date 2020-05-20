@@ -2,6 +2,9 @@
 	color: #070707;
 	font-family: Arial;
 }
+.code-border {
+	border: 3px solid #070707;
+}
 .w {
 	color: #070707;
 }
