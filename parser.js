@@ -43,11 +43,11 @@ function search(args){
 			let count2 = (itemtext.match(RegExp(keyword, 'g')) || []).length;
 			count = count1 + count2 / 2;
 		}
-		if (count < 1) {
-			matches.push(count)
+		console.log(count)
+		if (count <= 1) {
+			matches.push([count,item])
 		}
 	}
-	let tmatches = matches;
 	matches = matches.sort();
 	if (!order) {
 		let temp = [];
@@ -56,14 +56,10 @@ function search(args){
 		}
 		matches = temp;
 	}
-	for (var i = 0; i < matches.length; i ++){
-		outdata.push(tmatches.indexOf(matches[i]))
-	}
 	let jsont = [];
+	console.log(matches)
 	for (var i = 0; i < matches.length; i ++){
-		if (JSON.stringify(json[outdata[i]]) != undefined) {
-			jsont.push(JSON.stringify(json[outdata[i]])+"<br>")
-		}
+		jsont.push(matches[i][1])
 	}
 	return jsont;
 }
