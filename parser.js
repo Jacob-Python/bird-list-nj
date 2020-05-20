@@ -37,11 +37,8 @@ function search(args){
 			itemtext = item.name.toLowerCase();
 			count = (itemtext.match(RegExp(keyword, 'g')) || []).length;
 		} else {
-			itemtext = item.type[0].toLowerCase();
-			let count1 = (itemtext.match(RegExp(keyword, 'g')) || []).length;
-			itemtext = item.type[1].toLowerCase();
-			let count2 = (itemtext.match(RegExp(keyword, 'g')) || []).length;
-			count = count1 + count2 / 2;
+			itemtext = item.type.toLowerCase();
+			count = (itemtext.match(RegExp(keyword, 'g')) || []).length;
 		}
 		if (count >= 1) {
 			matches.push([count,item])
