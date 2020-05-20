@@ -16,7 +16,7 @@ function addSearchBar(div){
 				r = search({"keyword":document.getElementById("search").value,"type":t, "order":true})
 				t = [];
 				for (var i = 0; i < r.length; i ++){
-					t.push("<h3>Name: "+r[i].name+"</h3><br><p>Family: "+r[i].type[0]+"s/"+r[i].type[1]+"</p>")
+					t.push("<h3>Name: "+r[i].name+"</h3><br><p>Family: "+r[i].type[0]+"s/"+r[i].type[1]+"</p><br><hr>")
 				}
 				document.getElementById("result").innerHTML = t;
 			}

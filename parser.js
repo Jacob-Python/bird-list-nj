@@ -43,8 +43,7 @@ function search(args){
 			let count2 = (itemtext.match(RegExp(keyword, 'g')) || []).length;
 			count = count1 + count2 / 2;
 		}
-		console.log(count)
-		if (count <= 1) {
+		if (count >= 1) {
 			matches.push([count,item])
 		}
 	}
