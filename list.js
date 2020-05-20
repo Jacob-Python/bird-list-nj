@@ -164,11 +164,35 @@ var json = [
 		"type": "Thrushes"
 	},
 	{
+		"name": "Veery",
+		"type":"Thrushes"
+	},
+	{
 		"name": "Swainson's Thrush",
 		"type": "Thrushes"
 	},
 	{
 		"name": "Goldfinch",
 		"type": "Finches"
+	},
+	{
+		"name": "House Finch",
+		"type": "Finches"
+	},
+	{
+		"name": "Cliff Swallow",
+		"type": "Swallows"
+	},
+	{
+		"name": "Tree Swallow",
+		"type": "Swallows"
+	},
+	{
+		"name": "Barn Swallow",
+		"type": "Swallows"
+	},
+	{
+		"name": "Rough-winged Swallow",
+		"type": "Swallows"
 	}
 ]
