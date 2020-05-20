@@ -24,13 +24,13 @@
 		<p id="i2" hidden>Just add to the body of your site the below code:<br>
 		<code>
 			<!-- I seriously had to type this all in!-->
-			<span class="w">&lt;</span><span class="r">input</span> <span class="g">id</span><span class="w">=</span><span class="y">&quot;search&quot;</span><span class="w">&gt;</span><br>
+			<span class="w">&lt;</span><span class="r">input</span> <span class="g">id</span><span class="w">=</span><span class="y">&quot;search&quot;</span><span class="w">&gt;</span><span class="w">&lt;<span class="r">br</span>&gt;</span><br>
 			<span class="w">&lt;</span><span class="r">input</span> <span class="g">id</span><span class="w">=</span><span class="y">&quot;name&quot;</span> <span class="g">type</span><span class="w">=</span><span class="y">&quot;checkbox&quot;</span> <span class="g">checked</span><span class="w">&gt;</span><br>
 			<span class="w">&lt;<span class="r">br</span>&gt;</span><span class="w">&lt;</span><span class="r">label</span> <span class="g">for</span><span class="w">=</span><span class="y">&quot;name&quot;</span><span class="w">&gt;Search by name or by family&lt;/</span><span class="r">label</span><span class
 
 			="w">&gt;</span><br>
 			<span class="w">&lt;<span class="r">br</span>&gt;</span><span class="w">&lt;</span><span class="r">button</span> <span class="g">onclick</span><span class="w">=</span><span class="y">&quot;<span class="b">searchf</span><span class="w">();</span>&quot;</span><span class="w">&gt;Search&lt;/</span><span class="r">button</span><span class="w">&gt;</span><br>
-			<span class="w">&lt;<span class="r">br</span>&gt;</span><span class="w">&lt;</span><span class="r">p</span> <span class="g">id</span><span class="w">=</span><span class="y">&quot;search&quot;</span><span class="w">&gt;&lt;/</span><span class="r">p</span><span class="w">&gt;</span><br>
+			<span class="w">&lt;<span class="r">br</span>&gt;</span><span class="w">&lt;</span><span class="r">p</span> <span class="g">id</span><span class="w">=</span><span class="y">&quot;result&quot;</span><span class="w">&gt;&lt;/</span><span class="r">p</span><span class="w">&gt;</span><br>
 			<span class="w">&lt;<span class="r">script</span>&gt;</span><br>
 			<span class="b">function searchf</span><span class="w">(){</span><br>
 			&emsp;<span class="b">let </span><span class="w">r;</span><br>
@@ -40,16 +40,16 @@
 			&emsp;<span class="w">};</span><br>
 			&emsp;<span class="w">r</span><span class="r">=</span><span class="b">search<span class="w">({<span class="y">&quot;keyword&quot;</span>:<span class="b">document</span>.<span class="b">getElementById</span>(<span class="y">&quot;search&quot;</span>).value, <span class="y">&quot;type&quot;</span>:t, <span class="y">&quot;order&quot;</span>:<span class="p">true</span>});</span></span><br>
 			&emsp;<span class="w">t</span><span class="r">=</span><span class="w">[];</span><br>
-			&emsp;<span class="w"><span class="r">for</span>(<span class="b">var</span> i <span class="r">=</span><span cass="p">0</span>; i <span class="r">&gt;</span> r.length; i <span class="r">++</span>){</span><br>
+			&emsp;<span class="w"><span class="r">for</span>(<span class="b">var</span> i <span class="r">=</span><span cass="p">0</span>; i <span class="r">&lt;</span> r.length; i <span class="r">++</span>){</span><br>
 			&emsp;&emsp;<span class="w">t.<span class="b">push</span>(<span class="y">&quot;&lt;h3&gt;Name: &quot;</span><span class="r">+</span>r[i].name<span class="r">+</span><span class="y">&quot;&lt;/h3&gt;&lt;br&gt;&lt;p&gt;Family: &quot;</span><span class="r">+</span>r[i].type[<span class="p">0</span>]<span class="r">+</span><span class="y">&quot;s/&quot;</span><span class="r">+</span>r[i].type[<span class="p">1</span>]<span class="r">+</span><span class="y">&quot;&#x3C;/p&#x3E;&#x3C;br&#x3E;&#x3C;hr&#x3E;&quot;</span>)</span><br>
 			&emsp;<span class="w">};</span><br>
-			&emsp;<span class="w"><span class="b">document</span>.<span class="b">getElementById</span>(<span class="y">&quot;result&quot;</span>).innerHTML<span class="r"> = </span>r;</span><br>
+			&emsp;<span class="w"><span class="b">document</span>.<span class="b">getElementById</span>(<span class="y">&quot;result&quot;</span>).innerHTML<span class="r"> = </span>t;</span><br>
 			<span class="w">};</span>
 			<span class="w">&lt;/<span class="r">script</span>&gt;</span>
 		</code><br>
 		And to the header this code:<br>
 		<code>
-			<span class="w">&lt;<span class="r">script</span> <span class="g">src</span><span class="y">&quot;https://www.birdata.gq/parser.js&quot</span>&gt;&lt;/<span class="r">script</span>&gt;</span>
+			<span class="w">&lt;<span class="r">script</span> <span class="g">src</span>=<span class="y">&quot;https://www.birdata.gq/parser.js&quot</span>&gt;&lt;/<span class="r">script</span>&gt;</span>
 		</code><br>
 		Note: the code may be colored differently on different sites or code editors.
 		</p>
